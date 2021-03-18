@@ -7,7 +7,8 @@
 
         1. `./masked_hairs` からマスクオーバーレイ画像を読み取る．
             <img width="400" src="for_readme/labelme_1.png"/>
-        2. polygonで各髪領域を書いて，ラベルをつける (0,1,2,...整数を使ってください).
+        2. 以下の論文のfig2を参考に髪領域をいくつかの領域に分割する。polygonで各髪領域を囲んで，ラベルをつける (0,1,2,...整数を使ってください).
+            http://kunzhou.net/zjugaps/autohair/resources/autohair.pdf
             <img width="400" src="for_readme/labelme_2.png"/>
         3. lineで各髪領域の方向を表す：
             - lineの原点が矢印の原点とみなして線を描く.
