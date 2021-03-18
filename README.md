@@ -24,13 +24,3 @@
             <img width="400" src="for_readme/labelme_4.png"/>
             <img width="400" src="for_readme/labelme_5.png"/>
         4. jsonファイルを`./points_json/'へ保存する．
-    2. 方向アノテーションを拡散してラベル付
-        ```
-        cd autohair
-        python autohair.py
-        ```
-        - オリジナル画像を `../images/` から，<br />
-        jsonファイルを　`../points_json/` から, <br />
-        髪マスクを `../hair_masks/` から読み取る.
-        - ラベルをつけて `../labeled_angles/` に出力
-        - ラベル：1=[0, 0.5π), 2=[0.5π, π), 3=[π, 1.5π), 4=[1.5π, 2π), 5=髪領域と認識しているけど，labelmeで髪領域に指定してない, 0=髪領域ではない
